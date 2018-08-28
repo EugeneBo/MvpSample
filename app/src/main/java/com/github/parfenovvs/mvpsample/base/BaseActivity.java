@@ -2,6 +2,7 @@ package com.github.parfenovvs.mvpsample.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
 public abstract class BaseActivity<V extends BaseView, P extends BasePresenter<V>> extends AppCompatActivity {
@@ -42,6 +43,7 @@ public abstract class BaseActivity<V extends BaseView, P extends BasePresenter<V
         presenter.detachView();
         super.onDestroy();
     }
+
 
     @Override
     public Object onRetainCustomNonConfigurationInstance() {

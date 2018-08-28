@@ -17,9 +17,9 @@ public class ListService {
       try {
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-          list.add("Item " + i);
+          list.add("Item# " + i);
         }
-        Thread.sleep(3000L);
+        Thread.sleep(1000L);
         callback.onSuccess(list);
       } catch (InterruptedException e) {
         e.printStackTrace();
